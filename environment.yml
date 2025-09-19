@@ -10,6 +10,7 @@ dependencies:
   - pandas
   - matplotlib
   - ipywidgets
+  - ipympl
   - pip
   - pip:
     - xsuite
@@ -19,3 +20,4 @@ dependencies:
     - xobjects
     - xcoll
     - xplt
+    - xwakes
