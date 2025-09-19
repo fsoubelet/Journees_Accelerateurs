@@ -13,7 +13,7 @@ Cette démonstration est basée sur la maille de PIMMS (voir : [CERN-PS-99-010-D
 
 Les notebooks suivants seront présentés en direct :
 
-- [`00_maille.ipynb`](00_maille.ipynb) : Présentation de l'interface d'Xsuite en re concevant la maille de PIMMS.
+- [`00_maille.ipynb`](00_maille.ipynb) : Présentation de l'interface d'Xsuite en concevant depuis zéro la maille de PIMMS.
 - [`01_optique.ipynb`](01_optique.ipynb) : Calcul des fonctions optiques, puis leur optimisation via les quadripôles et sextupôles pour l'extraction de faisceau via une résonance du troisième ordre dans la section droite.
 - [`02_impedance.ipynb`](02_impedance.ipynb) : Démonstration du tracking de particules et mitigation d'une instabilté due à l'impédance de la cavité RF.
 
