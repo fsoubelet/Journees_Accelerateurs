@@ -19,9 +19,9 @@ Les notebooks suivants seront présentés en direct :
 
 Les notebooks suivants ne seront pas présentés et sont fournis comme matériel supplémentaire :
 
-- [`03_characteriser_espace_phases.ipynb`](03_preparer_espace_phase.ipynb) : Charactérisation de l'espace des phases et préparation des conditions pour l'extraction de faisceau.
-- [`04_extraction.ipynb`](04_extraction.ipynb) : Simulation d'extraction lente de faisceau via une via tracking.
-- [`05_formats.ipynb`](05_formats.ipynb) : Aperçu des différents formats d'entrée et de sortie supportés par Xsuite.
+- [`03_espace_phases.ipynb`](extra/03_espace_phase.ipynb) : Charactérisation de l'espace des phases et préparation des conditions pour l'extraction de faisceau.
+- [`04_extraction.ipynb`](extra/04_extraction.ipynb) : Simulation d'extraction lente de faisceau via une via tracking.
+- [`05_formats.ipynb`](extra/05_formats.ipynb) : Aperçu des différents formats d'entrée et de sortie supportés par Xsuite.
 
 ## Licence
 
