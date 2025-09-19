@@ -15,13 +15,13 @@ Les notebooks suivants seront présentés en direct :
 
 - [`00_maille.ipynb`](00_maille.ipynb) : Présentation de l'interface d'Xsuite en re concevant la maille de PIMMS.
 - [`01_optique.ipynb`](01_optique.ipynb) : Calcul des fonctions optiques, puis leur optimisation via les quadripôles et sextupôles pour l'extraction de faisceau via une résonance du troisième ordre dans la section droite.
-- [`02_impedance.ipynb`](02_impedance.ipynb) : Démonstration du tracking de particules et mitigation d'une instabilté due à l'impédance de la machine.
+- [`02_impedance.ipynb`](02_impedance.ipynb) : Démonstration du tracking de particules et mitigation d'une instabilté due à l'impédance de la cavité RF.
 
 Les notebooks suivants ne seront pas présentés et sont fournis comme matériel supplémentaire :
 
-- [`03_espace_phases.ipynb`](extra/03_espace_phase.ipynb) : Charactérisation de l'espace des phases et préparation des conditions pour l'extraction de faisceau.
-- [`04_extraction.ipynb`](extra/04_extraction.ipynb) : Simulation d'extraction lente de faisceau via une via tracking.
-- [`05_formats.ipynb`](extra/05_formats.ipynb) : Aperçu des différents formats d'entrée et de sortie supportés par Xsuite.
+- [`03_formats.ipynb`](extra/03_formats.ipynb) : Aperçu des différents formats d'entrée et de sortie supportés par Xsuite.
+- [`04_espace_phases.ipynb`](extra/04_espace_phase.ipynb) : Charactérisation de l'espace des phases et préparation des conditions pour l'extraction lente du faisceau.
+- [`05_extraction.ipynb`](extra/05_extraction.ipynb) : Simulation d'extraction lente du faisceau via tracking.
 
 ## Licence
 
