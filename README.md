@@ -1,4 +1,4 @@
-# Xsuite Démonstration
+# Démonstration Xsuite
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/fsoubelet/Journees_Accelerateurs/HEAD)
 
