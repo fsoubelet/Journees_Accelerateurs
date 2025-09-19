@@ -1,0 +1,21 @@
+name: xsuite
+channels:
+  - conda-forge
+dependencies:
+  - python=3.13
+  - compilers
+  - setuptools
+  - scipy
+  - numpy
+  - pandas
+  - matplotlib
+  - ipywidgets
+  - pip
+  - pip:
+    - xsuite
+    - xtrack
+    - xpart
+    - xfields
+    - xobjects
+    - xcoll
+    - xplt
