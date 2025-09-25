@@ -3,7 +3,7 @@
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/fsoubelet/Journees_Accelerateurs/HEAD)
 
 Ce dépôt contient des notebooks démontrant l'interface d'[Xsuite](https://xsuite.readthedocs.io/en/latest/), utilisé pour des simulations de dynamique des faisceaux en accélérateurs de particules.
-Il est conçu comme complément à ma présentation aux [Journées Accélérateurs 2025](https://indico.ijclab.in2p3.fr/event/11661/).
+Il est conçu comme complément à ma présentation aux [Journées Accélérateurs 2025](https://indico.ijclab.in2p3.fr/event/11661/), et les exemples sont basés sur divers tutoriels Xsuite donnés par le passé.
 
 Les notebooks peuvent être exécutés directement dans le navigateur via [Binder](https://mybinder.org/), en cliquant sur le badge ci-dessus.
 
