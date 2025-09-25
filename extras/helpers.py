@@ -75,15 +75,6 @@ def characterize_phase_space(line: xt.Line, plot: bool = True) -> dict[str, floa
     x_septum: float = 3.5e-2
     num_turns: int = 1000
     # ---------------------------------------------------------------
-    # We start by just getting the phase space itself by tracking
-    x_gen = np.linspace(0, 2.5e-2, 25)
-    parts = line.build_particles(x=x_gen, px=0, y=0, py=0, zeta=0, delta=0)
-    line.track(parts, num_turns=1000, turn_by_turn_monitor=True)
-    record = line.record_last_track
-    with warnings.catch_warnings():
-        warnings.simplefilter("ignore", category=RuntimeWarning)
-        norm_coords = twiss.get_normalized_coordinates(record)
-    # ---------------------------------------------------------------
     # Now let's binary search for the separatrix via tracking
     x_stable, x_unstable = 0, 0.03
     while x_unstable - x_stable > 1e-6:
@@ -153,6 +144,15 @@ def characterize_phase_space(line: xt.Line, plot: bool = True) -> dict[str, floa
     # ---------------------------------------------------------------
     # Plot the phase space with all this info if requested
     if plot is True:
+        # ---------------------------------------------------------------
+        # We now get the phase space itself by tracking more particles
+        x_gen = np.linspace(0, 1.1 * x_stable, 20)
+        parts = line.build_particles(x=x_gen, px=0, y=0, py=0, zeta=0, delta=0)
+        line.track(parts, num_turns=1000, turn_by_turn_monitor=True)
+        record = line.record_last_track
+        with warnings.catch_warnings():
+            warnings.simplefilter("ignore", category=RuntimeWarning)
+            norm_coords = twiss.get_normalized_coordinates(record)
         fig, ax_geom, ax_norm = arrange_phase_space_plot()
         ymin, ymax = ax_geom.get_ylim()
         ax_geom.plot(record.x.T, record.px.T, ".", markersize=1, color="C0")
