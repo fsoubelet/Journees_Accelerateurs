@@ -65,10 +65,10 @@
   },
   "sbend": {
    "__class__": "Bend",
-   "num_multipole_kicks": 5,
    "_integrator": 0,
    "_edge_exit_model": 1,
    "_edge_entry_model": 1,
+   "num_multipole_kicks": 5,
    "model": "adaptive",
    "k0": 0.0,
    "h": 0.0,
@@ -79,8 +79,8 @@
   },
   "rbend": {
    "__class__": "RBend",
-   "_edge_entry_model": 1,
    "_rbend_model": 0,
+   "_edge_entry_model": 1,
    "num_multipole_kicks": 5,
    "_integrator": 0,
    "_edge_exit_model": 1,
@@ -95,22 +95,22 @@
   },
   "quadrupole": {
    "__class__": "Quadrupole",
-   "_model": 0,
    "_integrator": 0,
+   "_model": 0,
    "num_multipole_kicks": 5,
    "order": 5
   },
   "sextupole": {
    "__class__": "Sextupole",
-   "_model": 0,
    "_integrator": 0,
+   "_model": 0,
    "num_multipole_kicks": 5,
    "order": 5
   },
   "octupole": {
    "__class__": "Octupole",
-   "_model": 0,
    "_integrator": 0,
+   "_model": 0,
    "num_multipole_kicks": 5,
    "order": 5
   },
@@ -168,12 +168,12 @@
   },
   "mb": {
    "__class__": "Bend",
-   "num_multipole_kicks": 5,
    "_integrator": 0,
    "_edge_exit_model": 1,
-   "_edge_entry_model": 1,
-   "edge_entry_angle": 0.19634954085,
    "edge_exit_angle": 0.19634954085,
+   "_edge_entry_model": 1,
+   "num_multipole_kicks": 5,
+   "edge_entry_angle": 0.19634954085,
    "model": "adaptive",
    "k0": 0.2364232881998796,
    "h": 0.2364232881998796,
@@ -184,79 +184,81 @@
   },
   "qfa": {
    "__class__": "Quadrupole",
-   "_model": 0,
    "_integrator": 0,
-   "length": 0.35,
+   "_model": 0,
    "k1": 0.3119666649243263,
+   "length": 0.35,
    "num_multipole_kicks": 5,
    "order": 5
   },
   "qd": {
    "__class__": "Quadrupole",
-   "_model": 0,
    "_integrator": 0,
-   "length": 0.35,
+   "_model": 0,
    "k1": -0.5239342886276671,
+   "length": 0.35,
    "num_multipole_kicks": 5,
    "order": 5
   },
   "qfb": {
    "__class__": "Quadrupole",
-   "_model": 0,
    "_integrator": 0,
-   "length": 0.35,
+   "_model": 0,
    "k1": 0.5247898391919908,
+   "length": 0.35,
    "num_multipole_kicks": 5,
    "order": 5
   },
   "sd1": {
    "__class__": "Sextupole",
-   "_model": 0,
    "_integrator": 0,
-   "length": 0.2,
    "k2": 0.8182678575026857,
+   "_model": 0,
+   "length": 0.2,
    "num_multipole_kicks": 5,
    "order": 5
   },
   "sf1": {
    "__class__": "Sextupole",
-   "_model": 0,
    "_integrator": 0,
-   "length": 0.2,
    "k2": -1.402449652377957,
+   "_model": 0,
+   "length": 0.2,
    "num_multipole_kicks": 5,
    "order": 5
   },
   "sd2": {
    "__class__": "Sextupole",
-   "_model": 0,
    "_integrator": 0,
-   "length": 0.2,
    "k2": 0.8182678575026857,
+   "_model": 0,
+   "length": 0.2,
    "num_multipole_kicks": 5,
    "order": 5
   },
   "sf2": {
    "__class__": "Sextupole",
-   "_model": 0,
    "_integrator": 0,
-   "length": 0.2,
    "k2": -1.402449652377957,
+   "_model": 0,
+   "length": 0.2,
    "num_multipole_kicks": 5,
    "order": 5
   },
   "se1": {
    "__class__": "Sextupole",
-   "_model": 0,
    "_integrator": 0,
+   "k2": 5.2309251515295845,
+   "_model": 0,
    "length": 0.2,
    "num_multipole_kicks": 5,
    "order": 5
   },
   "se2": {
    "__class__": "Sextupole",
-   "_model": 0,
    "_integrator": 0,
+   "k2": 0.6458219280485954,
+   "_model": 0,
    "length": 0.2,
    "num_multipole_kicks": 5,
    "order": 5
@@ -266,217 +268,217 @@
   },
   "qfa.1": {
    "__class__": "Quadrupole",
-   "_model": 0,
    "_integrator": 0,
-   "length": 0.35,
+   "_model": 0,
    "k1": 0.3119666649243263,
+   "length": 0.35,
    "num_multipole_kicks": 5,
    "order": 5
   },
   "qd.1": {
    "__class__": "Quadrupole",
-   "_model": 0,
    "_integrator": 0,
-   "length": 0.35,
+   "_model": 0,
    "k1": -0.5239342886276671,
+   "length": 0.35,
    "num_multipole_kicks": 5,
    "order": 5
   },
   "qfa.2": {
    "__class__": "Quadrupole",
-   "_model": 0,
    "_integrator": 0,
-   "length": 0.35,
+   "_model": 0,
    "k1": 0.3119666649243263,
+   "length": 0.35,
    "num_multipole_kicks": 5,
    "order": 5
   },
   "qfb.1": {
    "__class__": "Quadrupole",
-   "_model": 0,
    "_integrator": 0,
-   "length": 0.35,
+   "_model": 0,
    "k1": 0.5247898391919908,
+   "length": 0.35,
    "num_multipole_kicks": 5,
    "order": 5
   },
   "qd.2": {
    "__class__": "Quadrupole",
-   "_model": 0,
    "_integrator": 0,
-   "length": 0.35,
+   "_model": 0,
    "k1": -0.5239342886276671,
+   "length": 0.35,
    "num_multipole_kicks": 5,
    "order": 5
   },
   "qfb.2": {
    "__class__": "Quadrupole",
-   "_model": 0,
    "_integrator": 0,
-   "length": 0.35,
+   "_model": 0,
    "k1": 0.5247898391919908,
+   "length": 0.35,
    "num_multipole_kicks": 5,
    "order": 5
   },
   "qfb.3": {
    "__class__": "Quadrupole",
-   "_model": 0,
    "_integrator": 0,
-   "length": 0.35,
+   "_model": 0,
    "k1": 0.5247898391919908,
+   "length": 0.35,
    "num_multipole_kicks": 5,
    "order": 5
   },
   "qd.3": {
    "__class__": "Quadrupole",
-   "_model": 0,
    "_integrator": 0,
-   "length": 0.35,
+   "_model": 0,
    "k1": -0.5239342886276671,
+   "length": 0.35,
    "num_multipole_kicks": 5,
    "order": 5
   },
   "qfb.4": {
    "__class__": "Quadrupole",
-   "_model": 0,
    "_integrator": 0,
-   "length": 0.35,
+   "_model": 0,
    "k1": 0.5247898391919908,
+   "length": 0.35,
    "num_multipole_kicks": 5,
    "order": 5
   },
   "qfa.3": {
    "__class__": "Quadrupole",
-   "_model": 0,
    "_integrator": 0,
-   "length": 0.35,
+   "_model": 0,
    "k1": 0.3119666649243263,
+   "length": 0.35,
    "num_multipole_kicks": 5,
    "order": 5
   },
   "qd.4": {
    "__class__": "Quadrupole",
-   "_model": 0,
    "_integrator": 0,
-   "length": 0.35,
+   "_model": 0,
    "k1": -0.5239342886276671,
+   "length": 0.35,
    "num_multipole_kicks": 5,
    "order": 5
   },
   "qfa.4": {
    "__class__": "Quadrupole",
-   "_model": 0,
    "_integrator": 0,
-   "length": 0.35,
+   "_model": 0,
    "k1": 0.3119666649243263,
+   "length": 0.35,
    "num_multipole_kicks": 5,
    "order": 5
   },
   "qfa.5": {
    "__class__": "Quadrupole",
-   "_model": 0,
    "_integrator": 0,
-   "length": 0.35,
+   "_model": 0,
    "k1": 0.3119666649243263,
+   "length": 0.35,
    "num_multipole_kicks": 5,
    "order": 5
   },
   "qd.5": {
    "__class__": "Quadrupole",
-   "_model": 0,
    "_integrator": 0,
-   "length": 0.35,
+   "_model": 0,
    "k1": -0.5239342886276671,
+   "length": 0.35,
    "num_multipole_kicks": 5,
    "order": 5
   },
   "qfa.6": {
    "__class__": "Quadrupole",
-   "_model": 0,
    "_integrator": 0,
-   "length": 0.35,
+   "_model": 0,
    "k1": 0.3119666649243263,
+   "length": 0.35,
    "num_multipole_kicks": 5,
    "order": 5
   },
   "qfb.5": {
    "__class__": "Quadrupole",
-   "_model": 0,
    "_integrator": 0,
-   "length": 0.35,
+   "_model": 0,
    "k1": 0.5247898391919908,
+   "length": 0.35,
    "num_multipole_kicks": 5,
    "order": 5
   },
   "qd.6": {
    "__class__": "Quadrupole",
-   "_model": 0,
    "_integrator": 0,
-   "length": 0.35,
+   "_model": 0,
    "k1": -0.5239342886276671,
+   "length": 0.35,
    "num_multipole_kicks": 5,
    "order": 5
   },
   "qfb.6": {
    "__class__": "Quadrupole",
-   "_model": 0,
    "_integrator": 0,
-   "length": 0.35,
+   "_model": 0,
    "k1": 0.5247898391919908,
+   "length": 0.35,
    "num_multipole_kicks": 5,
    "order": 5
   },
   "qfb.7": {
    "__class__": "Quadrupole",
-   "_model": 0,
    "_integrator": 0,
-   "length": 0.35,
+   "_model": 0,
    "k1": 0.5247898391919908,
+   "length": 0.35,
    "num_multipole_kicks": 5,
    "order": 5
   },
   "qd.7": {
    "__class__": "Quadrupole",
-   "_model": 0,
    "_integrator": 0,
-   "length": 0.35,
+   "_model": 0,
    "k1": -0.5239342886276671,
+   "length": 0.35,
    "num_multipole_kicks": 5,
    "order": 5
   },
   "qfb.8": {
    "__class__": "Quadrupole",
-   "_model": 0,
    "_integrator": 0,
-   "length": 0.35,
+   "_model": 0,
    "k1": 0.5247898391919908,
+   "length": 0.35,
    "num_multipole_kicks": 5,
    "order": 5
   },
   "qfa.7": {
    "__class__": "Quadrupole",
-   "_model": 0,
    "_integrator": 0,
-   "length": 0.35,
+   "_model": 0,
    "k1": 0.3119666649243263,
+   "length": 0.35,
    "num_multipole_kicks": 5,
    "order": 5
   },
   "qd.8": {
    "__class__": "Quadrupole",
-   "_model": 0,
    "_integrator": 0,
-   "length": 0.35,
+   "_model": 0,
    "k1": -0.5239342886276671,
+   "length": 0.35,
    "num_multipole_kicks": 5,
    "order": 5
   },
   "qfa.8": {
    "__class__": "Quadrupole",
-   "_model": 0,
    "_integrator": 0,
-   "length": 0.35,
+   "_model": 0,
    "k1": 0.3119666649243263,
+   "length": 0.35,
    "num_multipole_kicks": 5,
    "order": 5
   },
@@ -667,6 +669,13 @@
   "drift_47": {
    "__class__": "Drift",
    "length": 2.387500000000003
+  },
+  "septum_aperture": {
+   "__class__": "LimitRect",
+   "max_x": 0.1,
+   "max_y": 0.1,
+   "min_y": -0.1,
+   "min_x": -0.1
   }
  },
  "_var_management_data": {
@@ -693,8 +702,8 @@
    "kqfb": 0.5247898391919908,
    "ksd": 0.8182678575026857,
    "ksf": -1.402449652377957,
-   "kse1": 0,
-   "kse2": 0,
+   "kse1": 5.2309251515295845,
+   "kse2": 0.6458219280485954,
    "kqf_common": 0.4144522422873999
   },
   "functions": {
@@ -844,6 +853,7 @@
  "lines": {
   "pimms": {
    "element_names": [
+    "septum_aperture",
     "extr_septum",
     "drift_1",
     "qfa.1",
@@ -967,28 +977,11 @@
     "corrector_limits_y": null
    },
    "particle_ref": {
-    "zeta": [
+    "mass0": 938272088.16,
+    "y": [
      0.0
     ],
-    "_rng_s2": [
-     0
-    ],
-    "_rng_s4": [
-     0
-    ],
-    "at_turn": [
-     0
-    ],
-    "anomalous_magnetic_moment": [
-     0.0
-    ],
-    "ay": [
-     0.0
-    ],
-    "state": [
-     1
-    ],
-    "s": [
+    "py": [
      0.0
     ],
     "spin_y": [
@@ -997,54 +990,71 @@
     "px": [
      0.0
     ],
-    "start_tracking_at_element": -1,
-    "at_element": [
-     0
+    "zeta": [
+     0.0
     ],
     "q0": 1.0,
-    "weight": [
+    "parent_particle_id": [
+     0
+    ],
+    "s": [
+     0.0
+    ],
+    "pdg_id": [
+     0
+    ],
+    "charge_ratio": [
      1.0
     ],
     "ax": [
      0.0
     ],
-    "parent_particle_id": [
-     0
-    ],
-    "t_sim": 4.432906644549619e-07,
-    "charge_ratio": [
-     1.0
-    ],
-    "chi": [
-     1.0
-    ],
-    "py": [
-     0.0
-    ],
-    "particle_id": [
-     0
-    ],
     "_rng_s3": [
      0
     ],
-    "mass0": 938272088.16,
-    "pdg_id": [
-     0
-    ],
-    "_rng_s1": [
-     0
-    ],
-    "y": [
+    "x": [
      0.0
     ],
     "spin_x": [
      0.0
     ],
+    "_rng_s1": [
+     0
+    ],
+    "weight": [
+     1.0
+    ],
+    "start_tracking_at_element": -1,
+    "at_element": [
+     0
+    ],
+    "ay": [
+     0.0
+    ],
+    "anomalous_magnetic_moment": [
+     0.0
+    ],
     "spin_z": [
      0.0
     ],
-    "x": [
-     0.0
+    "particle_id": [
+     0
+    ],
+    "at_turn": [
+     0
+    ],
+    "state": [
+     1
+    ],
+    "t_sim": 4.432906644549619e-07,
+    "_rng_s4": [
+     0
+    ],
+    "_rng_s2": [
+     0
+    ],
+    "chi": [
+     1.0
     ],
     "delta": [
      0.0
