@@ -67,12 +67,8 @@ cell_b = env.new_line(
 arc = cell_a + cell_b
 
 # Straight sections
-long_straight = env.new_line(
-    length=2.0, components=[env.new("mid.lss", xt.Marker, at=1.0)]
-)
-short_straight = env.new_line(
-    length=1.0, components=[env.new("mid.sss", xt.Marker, at=1.0)]
-)
+long_straight = env.new_line(length=2.0, components=[env.new("mid.lss", xt.Marker, at=1.0)])
+short_straight = env.new_line(length=1.0, components=[env.new("mid.sss", xt.Marker, at=1.0)])
 
 # Ring
 ring = 2 * (long_straight + arc + short_straight - arc)  # mirror symmetric lattice
