@@ -20,7 +20,7 @@ Les notebooks suivants seront présentés en direct :
 Les notebooks suivants ne seront pas présentés et sont fournis comme matériel supplémentaire :
 
 - [`03_characterisation_espace_phase.ipynb`](extras/03_characterisation_espace_phase.ipynb) : Charactérisation de l'espace des phases en excitant la résonance du troisième ordre pour extraction.
-- [`04_optimisation_extraction.ipynb`](extras/04_optimisation_extraction.ipynb) : Optimisation de la topologie de l'espace des phases proche de la résonance du troisième ordre pour faciliter l'extraction.
+- [`04_optimisation_topologie.ipynb`](extras/04_optimisation_topologie.ipynb) : Optimisation de la topologie de l'espace des phases proche de la résonance du troisième ordre pour faciliter l'extraction.
 - [`05_extraction_lente.ipynb`](extras/05_extraction_lente.ipynb) : Simulation d'extraction lente du faisceau via tracking, et optimisation d'une excitation pour extraire le faisceau.
 - [`06_formats.ipynb`](extras/06_formats.ipynb) : Aperçu des différents formats supportés par Xsuite.
 
