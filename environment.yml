@@ -22,3 +22,4 @@ dependencies:
     - xplt
     - xwakes
     - pint
+    - py-bobyqa
