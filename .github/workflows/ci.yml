@@ -1,0 +1,49 @@
+# Run the notebooks every day at 3am (UTC time) and pushes
+name: Test Notebooks with Papermill
+
+on:
+  push:
+  schedule:
+    - cron: "0 3 * * *"   # Daily at 3 AM UTC
+
+jobs:
+  run-notebooks:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Install uv and Python
+        uses: astral-sh/setup-uv@v6
+        with:
+          python-version: 3.13
+          enable-cache: true
+          activate-environment: true
+
+      - name: Install dependencies
+        run: |
+          uv pip install papermill jupyter nbconvert xsuite xtrack xpart xfields xobjects xcoll xplt xwakes pint py-bobyqa cpymad ipywidgets ipympl scipy numpy pandas matplotlib setuptools
+
+      # I hardcode the notebooks to run because I need a specific execution order
+      - name: Run main notebooks with papermill
+        run: |
+          mkdir -p executed
+          papermill 00_maille.ipynb executed/00_maille.ipynb
+          papermill 01_optique.ipynb executed/01_optique.ipynb
+          papermill 02_impedance.ipynb executed/02_impedance.ipynb
+          # Add more in order here
+
+      - name: Run extra notebooks with papermill
+        run: |
+          cd extras
+          papermill 03_characterisation_espace_phase.ipynb ../executed/03_characterisation_espace_phase.ipynb
+          papermill 04_optimisation_topologie.ipynb ../executed/04_optimisation_topologie.ipynb
+          papermill 05_extraction_lente.ipynb ../executed/05_extraction_lente.ipynb
+          cd ..
+
+      - name: Convert executed notebooks to HTML
+        run: |
+          mkdir -p html
+          for nb in executed/*.ipynb; do
+            jupyter nbconvert --to html "$nb" --output-dir html
+          done
