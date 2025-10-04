@@ -55,7 +55,7 @@ jobs:
       - name: Generate index.html
         run: |
           {
-            echo "<html><head><title>Rendus des notebooks post-exécution</title></head><body><h1>Liens</h1><ul>"
+            echo "<html><head><title>Rendus des notebooks post-exécution</title></head><body><h1>Rendus des notebooks post-exécution</h1><ul>"
             for f in html/*.html; do
               name=$(basename "$f")
               echo "<li><a href=\"$name\">$name</a></li>"
