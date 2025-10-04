@@ -28,17 +28,17 @@ jobs:
       - name: Run main notebooks with papermill
         run: |
           mkdir -p executed
-          papermill 00_maille.ipynb executed/00_maille.ipynb
-          papermill 01_optique.ipynb executed/01_optique.ipynb
-          papermill 02_impedance.ipynb executed/02_impedance.ipynb
+          papermill 00_maille.ipynb executed/00_maille.ipynb -k python3
+          papermill 01_optique.ipynb executed/01_optique.ipynb -k python3
+          papermill 02_impedance.ipynb executed/02_impedance.ipynb -k python3
           # Add more in order here
 
       - name: Run extra notebooks with papermill
         run: |
           cd extras
-          papermill 03_characterisation_espace_phase.ipynb ../executed/03_characterisation_espace_phase.ipynb
-          papermill 04_optimisation_topologie.ipynb ../executed/04_optimisation_topologie.ipynb
-          papermill 05_extraction_lente.ipynb ../executed/05_extraction_lente.ipynb
+          papermill 03_characterisation_espace_phase.ipynb ../executed/03_characterisation_espace_phase.ipynb -k python3
+          papermill 04_optimisation_topologie.ipynb ../executed/04_optimisation_topologie.ipynb -k python3
+          papermill 05_extraction_lente.ipynb ../executed/05_extraction_lente.ipynb -k python3
           cd ..
 
       - name: Convert executed notebooks to HTML
