@@ -58,7 +58,7 @@ jobs:
 
       # Upload the doc to github pages branch and publish if from a push to master
       - name: Upload HTML to gh-pages
-        if: success()
+        if: success() && github.ref == 'refs/heads/main'  # only on pushes to main
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
