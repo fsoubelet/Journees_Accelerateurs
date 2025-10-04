@@ -3,6 +3,8 @@ name: Test Notebooks with Papermill
 
 on:
   push:
+    branches:
+      - main
   schedule:
     - cron: "0 3 * * *"   # Daily at 3 AM UTC
 
@@ -78,5 +80,5 @@ jobs:
 
     steps:
       - name: Deploy to GitHub Pages
-        id: deploy
+        id: deployment
         uses: actions/deploy-pages@v4
