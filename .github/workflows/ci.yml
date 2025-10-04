@@ -47,3 +47,11 @@ jobs:
           for nb in executed/*.ipynb; do
             jupyter nbconvert --to html "$nb" --output-dir html
           done
+
+      - name: Upload executed notebooks (ipynb + html)
+        uses: actions/upload-artifact@v3
+        with:
+          name: executed-notebooks
+          path: |
+            executed/*.ipynb
+            html/*.html
