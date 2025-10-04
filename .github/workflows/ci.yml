@@ -52,6 +52,17 @@ jobs:
             jupyter nbconvert --to html "$nb" --output-dir html
           done
 
+      - name: Generate index.html
+        run: |
+          {
+            echo "<html><head><title>Rendus des notebooks post-exécution</title></head><body><h1>Liens</h1><ul>"
+            for f in html/*.html; do
+              name=$(basename "$f")
+              echo "<li><a href=\"$name\">$name</a></li>"
+            done
+            echo "</ul></body></html>"
+          } > html/index.html
+
       - name: Upload executed notebooks (ipynb + html) as artifacts
         uses: actions/upload-artifact@v4
         with:
