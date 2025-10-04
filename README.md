@@ -22,6 +22,20 @@ Les notebooks suivants ne seront pas présentés et sont fournis comme matériel
 - [`05_extraction_lente.ipynb`](extras/05_extraction_lente.ipynb) : Simulation d'extraction lente du faisceau via tracking, et optimisation d'une excitation pour extraire le faisceau.
 - [`06_formats.ipynb`](extras/06_formats.ipynb) : Aperçu des différents formats supportés par Xsuite.
 
+<details> <summary><b>Rendu pages statiques</b></summary>
+
+Un rendu HTML des notebooks est disponible en ligne via l'espace GitHub Pages de ce dépôt.
+Les notebooks post-exécution sont accessibles aux liens suivants :
+
+- [00_maille.ipynb](https://fsoubelet.github.io/Journees_Accelerateurs/00_maille.html)
+- [01_optique.ipynb](https://fsoubelet.github.io/Journees_Accelerateurs/01_optique.html)
+- [02_impedance.ipynb](https://fsoubelet.github.io/Journees_Accelerateurs/02_impedance.html)
+- [03_characterisation_espace_phase.ipynb](https://fsoubelet.github.io/Journees_Accelerateurs/03_characterisation_espace_phase.html)
+- [04_optimisation_topologie.ipynb](https://fsoubelet.github.io/Journees_Accelerateurs/04_optimisation_topologie.html)
+- [05_extraction_lente.ipynb](https://fsoubelet.github.io/Journees_Accelerateurs/05_extraction_lente.html)
+
+</details>
+
 ## Licence
 
 Ce dépôt est sous licence [MIT](LICENSE).
