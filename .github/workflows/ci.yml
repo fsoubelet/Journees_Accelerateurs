@@ -43,6 +43,7 @@ jobs:
           papermill 03_characterisation_espace_phase.ipynb ../executed/03_characterisation_espace_phase.ipynb -k python3 --execution-timeout 600
           papermill 04_optimisation_topologie.ipynb ../executed/04_optimisation_topologie.ipynb -k python3 --execution-timeout 600
           papermill 05_extraction_lente.ipynb ../executed/05_extraction_lente.ipynb -k python3 --execution-timeout 600
+          papermill 06_formats.ipynb ../executed/06_formats.ipynb -k python3 --execution-timeout 600
           cd ..
 
       - name: Convert executed notebooks to HTML
@@ -61,6 +62,7 @@ jobs:
             ["03_characterisation_espace_phase.html"]="Caractérisation de l'espace des phases pour extraction lente"
             ["04_optimisation_topologie.html"]="Optimisation de la topologie de l'espace des phases pour extraction lente"
             ["05_extraction_lente.html"]="Simulation et optimisation d'extraction lente via tracking"
+            ["06_formats.html"]="Aperçu des différents formats supportés par Xsuite"
           )
 
           {
@@ -75,7 +77,7 @@ jobs:
             echo "</ul>"
 
             echo "<h2>Notebooks supplémentaires</h2><ul>"
-            for nb in html/03_characterisation_espace_phase.html html/04_optimisation_topologie.html html/05_extraction_lente.html; do
+            for nb in html/03_characterisation_espace_phase.html html/04_optimisation_topologie.html html/05_extraction_lente.html html/06_formats.html; do
               desc=${DESCRIPTIONS[$nb]}
               echo "<li>$desc: <a href=\"$nb\">$nb</a></li>"
             done
