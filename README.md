@@ -33,6 +33,7 @@ Les notebooks post-exécution sont accessibles aux liens suivants :
 - [03_characterisation_espace_phase.ipynb](https://fsoubelet.github.io/Journees_Accelerateurs/03_characterisation_espace_phase.html)
 - [04_optimisation_topologie.ipynb](https://fsoubelet.github.io/Journees_Accelerateurs/04_optimisation_topologie.html)
 - [05_extraction_lente.ipynb](https://fsoubelet.github.io/Journees_Accelerateurs/05_extraction_lente.html)
+- [06_formats.ipynb](https://fsoubelet.github.io/Journees_Accelerateurs/06_formats.html)
 
 </details>
 
