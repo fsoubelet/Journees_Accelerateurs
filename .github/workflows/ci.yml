@@ -54,13 +54,34 @@ jobs:
 
       - name: Generate index.html
         run: |
+          declare -A DESCRIPTIONS=(
+            ["00_maille.html"]="Conception de la maille PIMMS"
+            ["01_optique.html"]="Optimisation des fonctions optiques"
+            ["02_impedance.html"]="Mitigation d'une instabilité dûe à l'impédance de la cavité RF"
+            ["03_characterisation_espace_phase.html"]="Caractérisation de l'espace des phases pour extraction lente"
+            ["04_optimisation_topologie.html"]="Optimisation de la topologie de l'espace des phases pour extraction lente"
+            ["05_extraction_lente.html"]="Simulation et optimisation d'extraction lente via tracking"
+          )
+
           {
-            echo "<html><head><title>Rendus des notebooks post-exécution</title></head><body><h1>Rendus des notebooks post-exécution</h1><ul>"
-            for f in html/*.html; do
-              name=$(basename "$f")
-              echo "<li><a href=\"$name\">$name</a></li>"
+            echo "<html><head><meta charset='utf-8'><title>Notebooks exécutés</title></head><body>"
+            echo "<h1>Résultats des notebooks</h1>"
+
+            echo "<h2>Notebooks présentés</h2><ul>"
+            for nb in html/00_maille.html html/01_optique.html html/02_impedance.html; do
+              desc=${DESCRIPTIONS[$nb]}
+              echo "<li>$desc: <a href=\"$nb\">$nb</a></li>"
             done
-            echo "</ul></body></html>"
+            echo "</ul>"
+
+            echo "<h2>Notebooks supplémentaires</h2><ul>"
+            for nb in html/03_characterisation_espace_phase.html html/04_optimisation_topologie.html html/05_extraction_lente.html; do
+              desc=${DESCRIPTIONS[$nb]}
+              echo "<li>$desc: <a href=\"$nb\">$nb</a></li>"
+            done
+            echo "</ul>"
+
+            echo "</body></html>"
           } > html/index.html
 
       - name: Upload executed notebooks (ipynb + html) as artifacts
