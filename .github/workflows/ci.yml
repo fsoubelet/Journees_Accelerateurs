@@ -70,14 +70,14 @@ jobs:
             echo "<h1>Résultats des notebooks</h1>"
 
             echo "<h2>Notebooks présentés</h2><ul>"
-            for nb in html/00_maille.html html/01_optique.html html/02_impedance.html; do
+            for nb in 00_maille.html 01_optique.html 02_impedance.html; do
               desc=${DESCRIPTIONS[$nb]}
               echo "<li>$desc: <a href=\"$nb\">$nb</a></li>"
             done
             echo "</ul>"
 
             echo "<h2>Notebooks supplémentaires</h2><ul>"
-            for nb in html/03_characterisation_espace_phase.html html/04_optimisation_topologie.html html/05_extraction_lente.html html/06_formats.html; do
+            for nb in 03_characterisation_espace_phase.html 04_optimisation_topologie.html 05_extraction_lente.html 06_formats.html; do
               desc=${DESCRIPTIONS[$nb]}
               echo "<li>$desc: <a href=\"$nb\">$nb</a></li>"
             done
